@@ -15,3 +15,7 @@ tkinter.py harimo amafunctions akurikira:
 
 NB: Ntago progress iri hano iri muyindi file yitwa draft.py ariyo nkoreramo new functions nongera muri finished ones ziba ziri muri
    tkinter.py
+ibyongewemo nyuma y'umunsi twashyizemo ibya mbere:
+- Youtube search and playing in a default browser - natekerejeko byakorohera Clovis muri condtions za python nshyizemo default browser.
+  try and see uko new feature imeze muri cmd
+  
