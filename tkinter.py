@@ -2,6 +2,8 @@
 
 from time import ctime
 import os 
+import webbrowser
+from youtube_search import YoutubeSearch
 
 def TextInput(prompt):
     data = str(input(prompt).strip()).lower()
@@ -14,7 +16,18 @@ def answering(dictionary, data):
         if conv in dictionary:
             if str(conv) == str(key):
                 if conv == 'kina':
-                    answer = os.system(input('Kadogo: Mbwira izina ry indirimbo: ')+'.mp3')
+                    search_term = input("Kadogo: Mbwira izina ry'indirimbo: ")
+                    results = YoutubeSearch(search_term, max_results=10).to_json()
+
+                    i = results.find('link')
+                    j = results.find(',', i, -1)
+    
+                    needed = results[i: j]
+                    i1 = needed.find('/')
+                    needed2 = needed[i1: -1]
+
+                    a_website = "https://www.youtube.com" + needed2
+                    answer = webbrowser.open_new(a_website)
                 answer = str(value)
             
         else:
