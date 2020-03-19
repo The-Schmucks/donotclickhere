@@ -1,7 +1,7 @@
 # Texting back app
 
 from time import ctime
-import os 
+import playsound
 import webbrowser
 from youtube_search import YoutubeSearch
 
@@ -26,6 +26,8 @@ def answering(dictionary, data):
                 needed2 = needed[i1: -1]
                 a_website = "https://www.youtube.com" + needed2
                 answer = webbrowser.open_new(a_website)
+               
+            answer = playsound.playsound("soundsConv/" + str(key) + ".wav", True)
             answer = str(value)
         
     else:
