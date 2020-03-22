@@ -1,0 +1,10 @@
+connecting java and python:
+---------------------------
+create an API which returns json code to be used in both the python server and android app(Java).
+
+
+
+creating the python server:
+---------------------------
+
+we already have one(local).

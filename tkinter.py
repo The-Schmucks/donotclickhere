@@ -28,7 +28,7 @@ def answering(dictionary, data):
                 a_website = "https://www.youtube.com" + needed2
                 answer = webbrowser.open_new(a_website)
                
-            answer = playsound.playsound("soundsConv/" + str(key) + ".wav", True)
+            answer = playsound.playsound("soundsConv/" + str(conv) + ".wav", True)
             answer = str(value)
         
     else:

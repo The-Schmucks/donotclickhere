@@ -1,0 +1,256 @@
+
+===============================
+Phone related commands
+
+kado, hamagara  contact name - Guhamagara  contact name
+hamagara  contact name  ku ndangururamajwi - Guhamagara  contact name  ku ndangururamajwi
+hari ubutumwa bwijwi mfite ? - Ufite ubutumwa bwijwi  number_of_ messages \n Dore ubuvuye kuri  contact name/number
+
+kina ubutumwa bwijwi mfite - Ufite ubutumwa bwijwi  number_of_ messages \n Dore ubuvuye kuri  contact name/number
+kina ubutumwa bwijwi bwa  contact name
+
+
+If number_of_ messages  : Nta butumwa bwijwi ufite
+
+If voicemail app is not installed: Nta application ikenewe mbashije kubona, yishake kuri app store
+
+
+Contact name  ni  relationship - Ok, nemeze ko  contact name  ari  relationship. \n Ok, contact name  ni  relashionship
+[Hamagara  isano]
+
+
+ if not saved : isano  wawe simuzi, mbwira nimero ze.
+
+
+
+Hamagara Polisi, ubutabazi, abazimya inkongi
+Habaye inkongi
+Habaye impanuka
+Habaye ihohoterwa
+
+
+Polisi: 112
+Impanuka: 113
+Ihohoterwa:116
+Ubutabazi : 912
+Inkongi :111
+
+
+
+bwira  contact  message
+
+andikira  contact  uti  message
+Andikira imeri  name  kubyerekeye  subject  uti  message
+
+nsomera ubutumwa
+
+ Weather
+
+mbwira iteganyagihe iki cyumweru/ uyu munsi - Dore uko ikirere kimeze iki cyumweru/ uyu munsi
+
+ikirere kizaba kimeze gite ejo/ muri icyi cyumweru - Dore uko ikirere giteganywa kumera
+ikirere kiraba kimeze gute uyu munsi/ saa tanu/ mu rwanda - Dore uko ikirere giteganywa kumera
+
+haririrwa izuba cg ndakenera umutaka, - Dore uko ikirere giteganywa kumera
+haririrwa ikihe kirere, - Dore uko ikirere giteganywa kumera
+haragwa imvura ? - Dore uko ikirere giteganywa kumera
+
+Izuba rirarasa ryari? - izuba rirarasa  sunrise_time
+Izuba rirarenga ryari ? - izuba rirarenga  sunset_time
+
+
+ Other calculator options
+
+currency  ni angahe muma  currency - initial_currency_value  mu  final_conversion_currency ni  conversion_value
+vunja currency mu  currency - initial_currency_value  mu  final_conversion_currency ni  conversion_value
+
+
+
+amayero/iyero: euro
+amadorari/idorari: dollar
+amayeni/ iyeni : chinese yen
+amarupi/irupi:
+indian rupee
+
+
+
+
+Number /x- number ni kangahe/ bingana na kangahe
+Mbwira  number  ku ijana bya  number - number  ku ijana bya  number  ni  result
+
+opening the camera
+
+Mfata ifoto,
+mfotora
+Fata videwo
+
+opening audio recorder
+
+Fata amajwi
+
+opening the gallery
+
+Shaka ifoto/amafoto yo mu cyumweru gishize/ nyereka amafoto yanjye {selfies}
+Nyereka amafoto nafatiye  location/ date
+
+Toggle options
+
+cana WiFi, internet, bluetooth - Ok,  nacanye wifi/ interneti
+Zimya WiFi, internet, bluetooth - Ok,  nacanye wifi/ interneti
+
+
+ongera urumuri, vorimi - OK, nongeje urumuri,vorimi or Ok, nashyize urumuri,vorimi kuri  level_of_brightness/level_of_volume or Ni uru rugero rwurumuri rushoboka
+gabanya urumuri, vorimi - OK, nagabanije urumuri,vorimi or Ok, nashyize urumuri,vorimi kuri  level_of_brightness/level_of_volume or Ni uru rugero rwumwijima rushoboka
+
+
+else: Simbashije kubimenya gusa wareba mu bijyanye na terefone
+
+
+
+
+ launch
+
+fungura  name of app
+Fungura  website
+sura website
+
+ setting tasks and Event reminders
+
+shyira gahunda/ gahunda  name_of_thing - Ok nshyizeho gahunda ya  name_of_thing  nemeze?
+name_of_thing  yasubitswe/yimuwe/yimuriwe  time - Nsubike  name_of_thing  muri gahunda zawe?
+
+
+Ntakibazo, mbikuye muri gahunda ziteganyijwe.
+
+
+
+Ni izihe gahunda mfite  time ex: uyumunsi, ejo, mu cyumweru gitaha, mu masaha abiri ari imbere.
+
+Unyibutse  name_of_thing  nimva  location - ok, ndakwibutsa
+Unyibutse  name_of_thing  ningera  location - ok, ndakwibutsa
+
+day/ holiday  ni ryari? - day/holiday iri  date/time
+day/ holiday  iri ryari? - day/holiday iri  date/time
+day/ holiday  izaba ryari? - day/holiday iri  date/time
+Hari iminsi ingahe hagati ya  date  na  date - hagati ya  date  na  date  Hari iminsi  number_of_days
+
+National_holiday  irabura iminsi ingahe? - National_holiday  irabura  number_of_days
+Harabura iminsi ingahe ngo  national_holiday  ibe - National_holiday  irabura  number_of_days
+Harabura iminsi ingahe ngo  date  igere - date  irabura  number_of_days
+Harabura iminsi ingahe ngo  saved_birthday  igere - saved_birthday  irabura  number_of_days
+
+
+ Alarms
+
+umbyutse saa  time - Ndagukangura  time
+umbyutse mu masaha  duration - Ndagukangura  time
+ujye umbyutsa saa  time - Nzajya Ngukangura  time
+ni sangapi muri  place - Ni saa  time  muri  location
+
+
+if location unknown: Simbashije kumenya aho ari ho.  offering alternative to search the web
+
+
+ Dictionary
+
+Sobanura  word - Ijambo  word  risobanuye  definition
+word  risobanuye iki? - Ijambo  word  risobanuye  definition
+Word  rivuze iki? - Ijambo  word  risobanuye  definition
+Word  ni  iki? - - Ijambo  word  risobanuye  definition
+Ni irihe jambo ryasimbura  word - Andi magambo yakoreshwa ni “words” or Dore icyo mbonye/ amakuru mbibonyeho
+
+ other
+
+Ndebera urukuta rwa  account name  kuri Twitter
+Shaka  notes
+Shaka amafoto ya  word
+Shaka  app {in the store}
+Shaka  inyandiko za Word/PdF/Powerpoint mfite
+
+ maps and directions
+
+Shaka inzira  y’imodoka  igera  destination - Mbonye  results_for_search
+Shaka inzira y’amaguru igera  destination - Mbonye  results_for_search
+Shaka inzira  igera  destination - Mbonye  results_for_search
+Ndebera bisi zijya/za  destination  kuri  agency  time/day - Mbonye  results_for_search
+
+Ni gute nagera  destination -  Mbonye  results_for_search
+Ni gute nagera  destination  n’imodoka - Mbonye  results_for_search
+Ni gute nagera  destination  n’amaguru - Mbonye  results_for_search
+
+
+
+if slow-connection: Gushaka inzira igera …
+
+
+Business_name  ifunga/ifungura ryari? - Mbonye  results_for_search
+Business_name  iri he? - Mbonye  results_for_search
+Business_name  iri hagana he? - Mbonye  results_for_search
+Business_name  iherereye he? - Mbonye  results_for_search
+
+Byantwara igihe kingana iki kugera  destination - Mbonye  results_for_search
+
+Essence  igura ite/gute ubungubu  Mbonye  results_for_search
+mazout  igura ite/gute ubungubu  Mbonye  results_for_search
+amavuta y’imodoka  agura ate ubungubu?  Mbonye  results_for_search
+
+ibiciro bya  lisanse - Mbonye  results_for_search
+ibiciro bya  mazout - Mbonye  results_for_search
+ibiciro by'  amavuta y’imodoka - Mbonye  results_for_search
+Nshakira sitasiyo iri hafi - Mbonye  results_for_search
+
+
+
+if slow-connection: Gushaka sitasiyo iri hafi...
+
+
+
+ Sports and Entertainment
+
+Ni iyihe kipe yatsinze muri  championship - Mbonye  results_for_search
+Umukino uhuza team na  team  warangiye ute - Mbonye  results_for_search
+Team  na  team  time  byarangiye bite? - Mbonye  results_for_search
+Ni ayahe makipe arakina  uyumunsi/uyu mugoroba  location  championship - Mbonye  results_for_search
+Team  izakina ryari? / iherutse gukina ryari? - Mbonye  results_for_search
+Ni izihe firime ziri kwerekanwa muri sinema? - Mbonye  results_for_search
+Ni he narebera firime? - Mbonye  results_for_search
+Inkinamico ziri kuzihe radio? - Mbonye  results_for_search
+Inkinamico ziri ryari?  - Mbonye  results_for_search
+Ni utuhe/akahe  kabari/tubari keza/twiza kari/turi hafi aha? - Mbonye  results_for_search
+Ni akahe/utuhe  tubyiniro  keza/twiza kari/turi hafi aha? - Mbonye  results_for_search
+ni iyihe/izihe  restora  iri/ziri hafi aha - Mbonye  results_for_search
+ni iyihe/izihe  piscine  iri/ziri hafi aha - Mbonye  results_for_search
+
+ Songs
+
+Kina  song
+
+if song not present:Simbashije kubona  song  mu ndirimbo zawe. Wifuza ko nyishakira kuri murandasi?
+
+
+
+Shaka song  kuri youtube - Dore videos/indirimbo za  request  nsanze kuri  YouTube
+Shaka song  kuri spotify - Dore videos/indirimbo za  request  nsanze kuri  Spotify
+Vanga imiziki yange -
+Simbuka
+subiza inyuma
+hagarika
+ceceka
+itsa
+
+
+other Replies.
+
+
+
+Vorimi nyishyize kuri …
+Nongere cg ngabanye vorimi?
+
+
+Ihangane nshake ingendo za bisi
+
+Ok, dore ibyo mbashije kubona.
+
+Nta gisubizo mbashije kubona
+
+Sinabasha gusiba  error 
