@@ -1,15 +1,25 @@
 package com.example.myapplication;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -32,9 +42,10 @@ public class MainActivity extends AppCompatActivity {
     private ListView messagesView;
     private static Context context;
 
-    public static Context getcontext(){
+    public static Context getcontext() {
         return MainActivity.context;
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         MemberData data = new MemberData("Clovis", getRandomColor());
     }
 
-    public void get_answer(String command){
+    public void get_answer(String command) {
 
         command = command.replace(" ", "%20");
         String url = "http://192.168.1.196:5000/api/v1?command=" + command;

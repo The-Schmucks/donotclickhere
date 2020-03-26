@@ -1,4 +1,5 @@
 import re
+import requests
 from youtube_search import YoutubeSearch
 
 class Kadogo:
@@ -31,8 +32,15 @@ class Kadogo:
         self.json_return['is_command'] = self.is_command
         return self.json_return
 
+    def get_temperature(self, location):
+        url = "http://api.openweathermap.org/data/2.5/weather?q=" + location + ",canada&appid=186d4b000520ab60db3db1c896f48882"
+        data = requests.get(url)
+        json_data = data.json()
+        temp_k = float(json_data["main"]["temp"])
+        temp_c = int(temp_k - 273.15)
+        return str(temp_c)
     
-    def answering(self):
+    def answering(self, location="montreal"):
         command = str(self.question.strip().split(" ")[0])
         if  self.question in self.dictionary.keys():
             res = self.dictionary.get(self.question)
@@ -50,13 +58,14 @@ class Kadogo:
                 needed2 = needed[i1: -1]
                 res = "https://www.youtube.com" + needed2
                 self.is_command = True
-            
-            self.question = command
 
         else:
             self.audio = "Ntago mbyumvise"
             res = 'Ntago mbyumvise!'
-            
+        
+        '''if command == 'iteganyagihe':
+            res = self.get_temperature(location)
+            self.question = command'''
         return res
 
     def load_dictionary(self):

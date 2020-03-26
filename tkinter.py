@@ -1,5 +1,4 @@
 # Texting back app
-#Testing branch features
 
 from time import ctime
 import playsound
@@ -13,7 +12,7 @@ def TextInput(prompt):
 
 def answering(dictionary, data):
     conv = data
-    if conv in dictionary.keys():
+    if conv in dictionary:
         if str(conv) in dictionary:
             value = dictionary.get(conv)
             if conv == 'kina':
@@ -28,13 +27,13 @@ def answering(dictionary, data):
                 a_website = "https://www.youtube.com" + needed2
                 answer = webbrowser.open_new(a_website)
                
-            answer = playsound.playsound("soundsConv/" + str(conv) + ".wav", True)
+            answer = playsound.playsound("soundsConv/" + str(key) + ".wav", True)
             answer = str(value)
         
     else:
         answer = 'Ntago mbyumvise !'
         
-    return answer
+    return answer 
 
 def read(filename):
     dictionary = {}
@@ -65,10 +64,8 @@ def main():
         data = TextInput(prompt)
         answer = answering(dictionary, data)
         print('Charmant: ', answer)
+main()
 
-pop = "kina pop smoke"
-lis = pop.strip().split(" ")[0]
-print(lis)
 
 
 
