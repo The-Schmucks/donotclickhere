@@ -13,7 +13,7 @@ def TextInput(prompt):
 
 def answering(dictionary, data):
     conv = data
-    if conv in dictionary:
+    if conv in dictionary.keys():
         if str(conv) in dictionary:
             value = dictionary.get(conv)
             if conv == 'kina':
@@ -34,7 +34,7 @@ def answering(dictionary, data):
     else:
         answer = 'Ntago mbyumvise !'
         
-    return answer 
+    return answer
 
 def read(filename):
     dictionary = {}
@@ -65,8 +65,10 @@ def main():
         data = TextInput(prompt)
         answer = answering(dictionary, data)
         print('Charmant: ', answer)
-main()
 
+pop = "kina pop smoke"
+lis = pop.strip().split(" ")[0]
+print(lis)
 
 
 
