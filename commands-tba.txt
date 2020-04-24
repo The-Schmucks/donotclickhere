@@ -21,8 +21,6 @@ Contact name  ni  relationship - Ok, nemeze ko  contact name  ari  relationship.
 
  if not saved : isano  wawe simuzi, mbwira nimero ze.
 
-
-
 Hamagara Polisi, ubutabazi, abazimya inkongi
 Habaye inkongi
 Habaye impanuka

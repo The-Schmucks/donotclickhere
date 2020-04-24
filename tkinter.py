@@ -3,6 +3,7 @@
 from time import ctime
 import playsound
 import webbrowser
+import requests
 from youtube_search import YoutubeSearch
 
 def TextInput(prompt):
@@ -10,26 +11,47 @@ def TextInput(prompt):
 
     return data
 
-def answering(dictionary, data):
-    conv = data
-    if conv in dictionary:
-        if str(conv) in dictionary:
-            value = dictionary.get(conv)
-            if conv == 'kina':
-                search_term = input("Kadogo: Mbwira izina ry'indirimbo: ")
-                results = YoutubeSearch(search_term, max_results=10).to_json()
-                i = results.find('link')
-                j = results.find(',', i, -1)
+def PlaySound(file):
+    playsound.playsound("soundsConv/" + file + ".wav", True)
 
-                needed = results[i: j]
-                i1 = needed.find('/')
-                needed2 = needed[i1: -1]
-                a_website = "https://www.youtube.com" + needed2
-                answer = webbrowser.open_new(a_website)
-               
-            answer = playsound.playsound("soundsConv/" + str(key) + ".wav", True)
-            answer = str(value)
+def get_temperature(location):
+    url = "http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=186d4b000520ab60db3db1c896f48882"
+    data = requests.get(url)
+    json_data = data.json()
+    temp_k = float(json_data["main"]["temp"])
+    temp_c = int(temp_k - 273.15)
+    return "Ni " + str(temp_c) + " Muri " + str(location)
+
+def Kina(search_term):
+    results = YoutubeSearch(search_term, max_results=10).to_json()
+    i = results.find('link')
+    j = results.find(',', i, -1)
+
+    needed = results[i: j]
+    i1 = needed.find('/')
+    needed2 = needed[i1: -1]
+    a_website = "https://www.youtube.com" + needed2
+    webbrowser.open_new(a_website)
+
+
+def answering(dictionary, question):
+    command = str(question.strip().split(" ")[0])
+
+    if command in dictionary.keys():
+        res = dictionary.get(command)
+        if  command == 'kina':
+            search_term = input("Kadogo: Mbwira izina ry'indirimbo: ")
+            Kina(search_term)
         
+        if command == 'iteganyagihe':
+            location = input("Kadogo: Muri Haganahe? ")
+            res = get_temperature(location)
+            answer = res
+        answer = str(res)
+
+    elif  question in dictionary.keys():
+        res = dictionary.get(question)
+     
     else:
         answer = 'Ntago mbyumvise !'
         

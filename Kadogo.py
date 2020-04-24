@@ -4,15 +4,15 @@ from youtube_search import YoutubeSearch
 
 class Kadogo:
     
-    __dict_file = "draft.txt"
-    dictionary = {}
-    json_return = {}
-    question = ""
-    answer = ""
-    audio = ""
-    is_command = False
+    __dict_file = "draft.txt" #commands file
+    dictionary = {}  #dictonary to hold the commands
+    json_return = {}  #json_data to be returned by the api
+    question = "" #holds the input from the user
+    answer = "" #holds the output from kadogo
+    audio = ""  #holds the audio file to be played
+    is_command = False #indicates whether the answer is a command or not
 
-    def __init__(self):
+    def __init__(self): #just a normal constructor mn. grow up
         self.json_return.clear()
         self.question = ""
         self.answer = ""
@@ -20,29 +20,34 @@ class Kadogo:
         self.is_command = False
         self.dictionary = {}
         self.dictionary = self.load_dictionary()
+        self.location = "paris,france" #i defined it coz i was having a bad time with android permissions
         
 
     def api(self, que):
-        
-        self.question = str(que).strip()
-        ans = self.answering()
-        self.audio = re.sub(" ", "_", self.question)
+        self.question = str(que).strip() #strips the input and sets it to the variable 'question'
+        ans = self.answering()  #gets the answer from kadogo
+        self.audio = re.sub(" ", "_", self.question) #replace the 
         self.json_return['audio'] = self.audio
         self.json_return['answer'] = ans
         self.json_return['is_command'] = self.is_command
         return self.json_return
 
-    def get_temperature(self, location):
-        url = "http://api.openweathermap.org/data/2.5/weather?q=" + location + ",canada&appid=186d4b000520ab60db3db1c896f48882"
+    def get_temperature(self):
+        url = "http://api.openweathermap.org/data/2.5/weather?q=" + self.location + "&appid=186d4b000520ab60db3db1c896f48882"
         data = requests.get(url)
         json_data = data.json()
         temp_k = float(json_data["main"]["temp"])
         temp_c = int(temp_k - 273.15)
         return str(temp_c)
     
-    def answering(self, location="montreal"):
+    def answering(self):
         command = str(self.question.strip().split(" ")[0])
-        if  self.question in self.dictionary.keys():
+        
+        if command == 'iteganyagihe':
+            res = self.get_temperature()
+            self.question = command
+        
+        elif  self.question in self.dictionary.keys():
             res = self.dictionary.get(self.question)
             
         elif command in self.dictionary.keys():
@@ -60,12 +65,8 @@ class Kadogo:
                 self.is_command = True
 
         else:
-            self.audio = "Ntago mbyumvise"
             res = 'Ntago mbyumvise!'
         
-        '''if command == 'iteganyagihe':
-            res = self.get_temperature(location)
-            self.question = command'''
         return res
 
     def load_dictionary(self):
@@ -83,5 +84,9 @@ class Kadogo:
         
         return res
 
-pop = "kina pop smoke"
-print(pop.split("kina ")[1])
+
+n = Kadogo()
+
+#output: {'audio': 'amakuru', 'answer': 'Ni meza.', 'is_command': False}
+# outputs the answer, the name of the audio to be played, and wether it is a command or not
+print(n.api("iteganyagihe")) 

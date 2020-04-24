@@ -154,6 +154,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return sb.toString().substring(0, 7);
     }
-
-
 }
