@@ -14,7 +14,7 @@ class Ai:
         # Numbers remain with their value and From the start to the very end
         # Letters get an incrementing value(1),by dividing 10 (10 is arbitrary taken but there's a reason to divide) to their corresponding
         # Number in the alphabetic order, we get a variable for use ... memory will be completed later on
-        memory = {'1':float(1), '2':float(2), '3':float(3),'a':float(0.1), 'b':float(0.2), 'c':float(0.3), 'd':float(0.4), 'e':float(0.5)}
+        memory = {'1':float(1), '2':float(2), '3':float(3),'a':float(0.1), 'b':float(0.2), 'c':float(0.3), 'd':float(0.4), 'e':float(0.5), 'f':float(0.6), 'g':float(0.7), 'h':float(0.8)}
         
         return memory
     
