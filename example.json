@@ -1,1 +1,18 @@
-{}
+{
+    "amazina_rusange" : ["abantu", "abapadiri", "abaganga", "inzu"],
+    "amazina_bwite": ["Ineza", "Ishimwe", "Kanombe", "Mutesi", "Senderi"],
+    "indangahantu": ["ku", "i", "mu"],
+    "inteko": ["mu", "ba", "mu", "mi", "ri", "ma", "ki", "bi", "n", "n", "ru", "ka", "tu", "bu", "ku", "ha"],
+    "ibicumbi_bya_ntera": ["to", "nini"],
+    "ibisantera": ["tagatifu"],
+    "ibinyazina":
+    {
+        "ngenera": [],
+        "ngenga": [],
+        "ndafutura": [],
+        "nyereka": [],
+        "mbanziriza": [],
+        "mpamagazi": [],
+        "ngenera_ngenga": []
+    }
+}
