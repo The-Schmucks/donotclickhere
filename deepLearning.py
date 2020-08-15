@@ -19,7 +19,8 @@ class Ai:
                   'a':float(0.1), 'b':float(0.2), 'c':float(0.3), 'd':float(0.4), 'e':float(0.5),
                   'f':float(0.6), 'g':float(0.7), 'h':float(0.8), 'i':float(0.9), 'j':float(2.7), 'k':float(1.1), 
                   'l':float(1.2), 'm':float(1.3),'n':float(1.4), 'o':float(1.5), 'p':float(1.6),'q':float(1.7), 'r':float(1.8), 's':float(1.9),'t':float(2.8),
-                  'v':float(2.2), 'u':float(2.1), 'w':float(2.3), 'x':float(2.4), 'y':float(2.5),'z':float(2.6), *:-+=.!}
+                  'v':float(2.2), 'u':float(2.1), 'w':float(2.3), 'x':float(2.4), 'y':float(2.5),'z':float(2.6), '*':float(0.01), '-':float(0.02), '+':float(0.03), '=':float(0.04),
+                  '.':float(0.05), '!':float(0.06), ':':float(0.07)}
         
         return memory
     
