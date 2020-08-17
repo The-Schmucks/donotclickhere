@@ -43,5 +43,4 @@ class Database(object):
         for item in cursorData:
             dictionary[item['_id']] = item
         return dictionary
-
-Database()
+    
