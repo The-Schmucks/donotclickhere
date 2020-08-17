@@ -28,7 +28,8 @@ class Ai:
         # @Clovis @Roger ... This function will return a dictionary
         # With key and value more precisely key that has logical float value from Learning sessions
         # And value which is the range of replies, This system takes advantage of it to perfect replies as value is Editable in the database_dictionary
-        return null
+        data = self.db.findAll('sample')
+        return data
     
     def separator(self):
         # This function get inputs as one string and separates them by terms
